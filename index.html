@@ -10,14 +10,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <link rel="stylesheet" href="/event.css">
+    <style>
+        body {
+      background-color:#E0CFCD;
+}
+header{
+    background-color:#413f3f;
+}
+footer {
+    background-color:#413f3f;
+}
+#logoimg{
+    height: 120px;
+    width: 114px;
+}
+#container1{
+    height: 72px;
+}
+#p1{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+#p3{
+    font-size: 22px;
+    color: azure;
+}
+#p5{
+    font-size: 32px;
+    color: #555;
+    text-transform: capitalize;
+}
+#p6{
+    text-align: center;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+.carousel-img {
+    object-fit: cover;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    margin: 0 20px;
+    height: 300px;
+}
+.about-image {
+    border: 5px solid #555;
+    width: 100%;
+    border-radius: 10px;
+}
+.event-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+    </style>
   </head>
   <body> 
     <header class="brand-logo">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid" style="background-color: #413f3f;">
                 <a class="navbar-brand" href="#">
-                    <img class=" animate__animated animate__flip" src="/photos/logo.png" alt="logo" id="logoimg" >
+                    <img class=" animate__animated animate__flip" src="/logo.png" alt="logo" id="logoimg" >
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,14 +95,14 @@
         <p  id="p2" class="hover-text">Manage your events efficiently with our platform.</p>
         <br>  
         <div class="owl-carousel owl-theme">    
-            <div><img src="/photos/home1.jpg" class="carousel-img w-100" alt="Event 1"></div>
-            <div><img src="/photos/home2.jpg" class="carousel-img w-100" alt="Event 2"></div>
-            <div><img src="/photos/home3.jpg" class="carousel-img w-100" alt="Event 3"></div>
-            <div><img src="/photos/home4.jpg" class="carousel-img w-100" alt="Event 4"></div>
-            <div><img src="/photos/home5.jpg" class="carousel-img w-100" alt="Event 5"></div>
-            <div><img src="/photos/home6.jpg" class="carousel-img w-100" alt="Event 6"></div>
-            <div><img src="/photos/home7.jpg" class="carousel-img w-100" alt="Event 6"></div>
-            <div><img src="/photos/home8.jpg" class="carousel-img w-100" alt="Event 6"></div>
+            <div><img src="/home1.jpg" class="carousel-img w-100" alt="Event 1"></div>
+            <div><img src="/home2.jpg" class="carousel-img w-100" alt="Event 2"></div>
+            <div><img src="/home3.jpg" class="carousel-img w-100" alt="Event 3"></div>
+            <div><img src="/home4.jpg" class="carousel-img w-100" alt="Event 4"></div>
+            <div><img src="/home5.jpg" class="carousel-img w-100" alt="Event 5"></div>
+            <div><img src="/home6.jpg" class="carousel-img w-100" alt="Event 6"></div>
+            <div><img src="/home7.jpg" class="carousel-img w-100" alt="Event 6"></div>
+            <div><img src="/home8.jpg" class="carousel-img w-100" alt="Event 6"></div>
         </div>
     </section> 
     <section id="about" class="my-5">
@@ -53,7 +110,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <img src="/photos/about1.jpg" alt="About" class="about-image"> 
+                    <img src="/about1.jpg" alt="About" class="about-image"> 
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <p id="p5">
@@ -69,7 +126,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card event-card">
-                        <img src="/photos/events4.jpeg" class="card-img-top" alt="Birthday">
+                        <img src="/events4.jpeg" class="card-img-top" alt="Birthday">
                         <div class="card-body text-center">
                             <h5>Birthday</h5>
                             <button class="btn btn-primary">Contact Now</button>
@@ -78,7 +135,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card">
-                        <img src="/photos/events2.jpg" class="card-img-top" alt="Wedding"> 
+                        <img src="/events2.jpg" class="card-img-top" alt="Wedding"> 
                         <div class="card-body text-center">
                             <h5>Wedding</h5>
                             <button class="btn btn-primary">Contact Now</button>
@@ -87,7 +144,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card">
-                        <img src="/photos/events1.jpg" class="card-img-top" alt="Corporate">
+                        <img src="/events1.jpg" class="card-img-top" alt="Corporate">
                         <div class="card-body text-center">
                             <h5>Corporate Event</h5>
                             <button class="btn btn-primary">Contact Now</button>
@@ -200,6 +257,36 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="/event.js"></script>
+    <script>
+         $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 3 }
+      }
+    });
+  });
+
+      (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+
+    </script>
   </body>
 </html>
