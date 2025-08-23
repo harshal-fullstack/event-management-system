@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="/event.css">
+  </head>
+  <body> 
+    <header class="brand-logo">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" style="background-color: #413f3f;">
+                <a class="navbar-brand" href="#">
+                    <img class=" animate__animated animate__flip" src="/photos/logo.png" alt="logo" id="logoimg" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="text-center">
+        <h2 id="p1">Welcome to Event Management System</h2>
+        <p  id="p2" class="hover-text">Manage your events efficiently with our platform.</p>
+        <br>  
+        <div class="owl-carousel owl-theme">    
+            <div><img src="/photos/home1.jpg" class="carousel-img w-100" alt="Event 1"></div>
+            <div><img src="/photos/home2.jpg" class="carousel-img w-100" alt="Event 2"></div>
+            <div><img src="/photos/home3.jpg" class="carousel-img w-100" alt="Event 3"></div>
+            <div><img src="/photos/home4.jpg" class="carousel-img w-100" alt="Event 4"></div>
+            <div><img src="/photos/home5.jpg" class="carousel-img w-100" alt="Event 5"></div>
+            <div><img src="/photos/home6.jpg" class="carousel-img w-100" alt="Event 6"></div>
+            <div><img src="/photos/home7.jpg" class="carousel-img w-100" alt="Event 6"></div>
+            <div><img src="/photos/home8.jpg" class="carousel-img w-100" alt="Event 6"></div>
+        </div>
+    </section> 
+    <section id="about" class="my-5">
+        <h2 class="text-center text-decoration-underline mb-4">About Us</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <img src="/photos/about1.jpg" alt="About" class="about-image"> 
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p id="p5">
+                        Welcome to our Ape's Event, your one-stop solution for planning, organizing, and managing all kinds of events including birthdays, weddings, corporate functions, and more. We bring your ideas to life with creativity, precision, and dedication.
+                    </p>
+                </div>
+           </div>
+        </div>
+    </section>
+    <section id="events" class="my-5">
+        <h2 class="text-center text-decoration-underline mb-4">Events</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="/photos/events4.jpeg" class="card-img-top" alt="Birthday">
+                        <div class="card-body text-center">
+                            <h5>Birthday</h5>
+                            <button class="btn btn-primary">Contact Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="/photos/events2.jpg" class="card-img-top" alt="Wedding"> 
+                        <div class="card-body text-center">
+                            <h5>Wedding</h5>
+                            <button class="btn btn-primary">Contact Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="/photos/events1.jpg" class="card-img-top" alt="Corporate">
+                        <div class="card-body text-center">
+                            <h5>Corporate Event</h5>
+                            <button class="btn btn-primary">Contact Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-5 text-center">
+                <div class="card-body">
+                    <h5>Other Events Coming Soon...</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="text-center text-decoration-underline mb-4">Contact Us</h2>
+        <div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <form class="row needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feeedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Email address:</label>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="name@example.com" required>
+                    <div class="valid-feeedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">city:</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feeedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">state:</label>
+                    <select id="validationCustom04" class="form-select"required>
+                    <option selected disabled value="">choose</option>
+                    <option >CG</option>
+                    <option >MP</option>    
+                    <option >MH</option>
+                    </select>
+                    <div class="invalid-feeedback">
+                        Please select a valid state.    
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Phone No:</label>
+                    <input type="tel" class="form-control" name="phone" id="validationCustom05" pattern="[6-9]{1}[0-9]{9}" required >
+                    <div class="valid-feeedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="invalidCheck" required>
+                        <label for="invalidcheck"  class="form-check-label">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">
+                        Submit form
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+    </section>
+    <footer class="text-white py-4">
+        <div class="container-fluid">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-3">
+                    <h5>Ape's Event</h5>
+                    <p><br>Durg <br>Chhattisgarh <br>INDIA</p>
+                </div>
+                <div class="col-md-4 mb-3 footer-link">
+                    <h5>Quick Links</h5>
+                    <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <a href="#"><i class="fab fa-instagram fa-2x text-white me-3"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x text-white"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p id="p6">&copy; 2025 Ape's Event | Made with Harshal project</p>
+        </div>
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/event.js"></script>
+  </body>
+</html>

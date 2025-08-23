@@ -1,0 +1,55 @@
+body {
+      background-color:#E0CFCD;
+}
+header{
+    background-color:#413f3f;
+}
+footer {
+    background-color:#413f3f;
+}
+#logoimg{
+    height: 120px;
+    width: 114px;
+}
+#container1{
+    height: 72px;
+}
+#p1{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+#p3{
+    font-size: 22px;
+    color: azure;
+}
+#p5{
+    font-size: 32px;
+    color: #555;
+    text-transform: capitalize;
+}
+#p6{
+    text-align: center;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+.carousel-img {
+    object-fit: cover;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    margin: 0 20px;
+    height: 300px;
+}
+.about-image {
+    border: 5px solid #555;
+    width: 100%;
+    border-radius: 10px;
+}
+.event-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
